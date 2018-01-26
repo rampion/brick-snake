@@ -16,5 +16,16 @@ extra-source-files:  README.md
 executable snake
   hs-source-dirs:      src
   main-is:             Main.hs
+  other-modules:       Snake
+                     , UI
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5
+                     , brick
+                     , vty
+                     , containers
+                     , linear
+                     , microlens
+                     , microlens-th
+                     , random
+                     , mtl
+  ghc-options: -Wall -Wextra -Werror -threaded

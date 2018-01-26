@@ -1,5 +1,5 @@
 module Main where
+import qualified UI
 
 main :: IO ()
-main = do
-  putStrLn "hello world"
+main = UI.main
